@@ -91,7 +91,7 @@ Console.WriteLine("There are two doors that lead to the exit of the castle.");
 Console.WriteLine("One door has a [gold pouch] crest on it and the other one has a [gold bar] crest on it. Could this lead to more gold?!");
 Console.WriteLine("Which door do you dare to open?");
 
-//Step 8: Check player's response, axe or sword
+//Step 8: Check player's response, gold pouch or gold bar
 
 string input5 = Console.ReadLine();
 
