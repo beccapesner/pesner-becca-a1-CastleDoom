@@ -87,6 +87,26 @@ if (input4 == "open")
 
 Console.WriteLine("There are two doors that lead to the exit of the castle.");
 Console.WriteLine("One door has a [gold pouch] crest on it and the other one has a [gold bar] crest on it.");
+Console.WriteLine("Which door do you dare to open?");
+
+//Step 8: Check player's response, axe or sword
+
+string input5 = Console.ReadLine();
+
+//Step 3a: Player chooses gold pouch
+
+if (input5 == "gold pouch")
+{
+    Console.WriteLine("You open the door and are free to exit the castle! Well done!");
+}
+
+//Step 3b: Player chooses gold bar
+
+else if (input5 == "gold bar")
+{
+    Console.WriteLine("You go to open the door with the gold bar and a GOBLIN appears!");
+    Console.WriteLine("The goblin won't let you pass unless you give them half your gold!");
+}
 
 bool foundTheTreasure = false;
 Console.WriteLine($"Did you find the treasure {!foundTheTreasure}");
