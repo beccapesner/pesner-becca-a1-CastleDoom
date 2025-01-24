@@ -99,7 +99,7 @@ string input5 = Console.ReadLine();
 
 if (input5 == "gold pouch")
 {
-    Console.WriteLine($"You open the door and are free to exit the castle! Well done, {name}!");
+    Console.WriteLine($"You open the door and are free to exit the castle! Well done, {name}!!!");
 }
 
 //Step 3b: Player chooses gold bar
@@ -110,7 +110,7 @@ else if (input5 == "gold bar")
     Console.WriteLine("The goblin won't let you pass unless you give them half your gold!");
     myGold -= 2500;
     Console.WriteLine($"You now have {myGold} gold!");
-    Console.WriteLine($"The goblin allows you to leave the castle. Well done, {name}!");
+    Console.WriteLine($"The goblin allows you to leave the castle. Well done, {name}!!!");
 }
 
 bool foundTheTreasure = false;
