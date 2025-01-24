@@ -95,14 +95,14 @@ Console.WriteLine("Which door do you dare to open?");
 
 string input5 = Console.ReadLine();
 
-//Step 3a: Player chooses gold pouch
+//Step 9a: Player chooses gold pouch
 
 if (input5 == "gold pouch")
 {
     Console.WriteLine($"You open the door and are free to exit the castle! Well done, {name}!!!");
 }
 
-//Step 3b: Player chooses gold bar
+//Step 9b: Player chooses gold bar
 
 else if (input5 == "gold bar")
 {
