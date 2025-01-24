@@ -1,6 +1,8 @@
 ﻿//Step 1: Get player's name
 
 
+using System;
+
 Console.WriteLine("Greetings traveler, what is your name?");
 string name = Console.ReadLine();
 Console.WriteLine($"Welcome, {name}!");
@@ -72,13 +74,13 @@ Console.WriteLine("There is a big door with the letters 'RG' on it. This must be
 Console.WriteLine("You gain the courage to [open] the door!");
 string input4 = Console.ReadLine();
 
+int myGold = 5000;
+
 if (input4 == "open")
 {
     Console.WriteLine("There it is!!!");
     Console.WriteLine("THE TREASURE! LOOK AT ALL THIS GOLD!");
-
-    int myGold = 5000;
-    Console.WriteLine($"{name} has obtained 5000 gold!");
+    Console.WriteLine($"{name} has obtained {myGold} gold!");
     Console.WriteLine("Leave the castle with your treasure!");
 }
 
@@ -86,7 +88,7 @@ if (input4 == "open")
 
 
 Console.WriteLine("There are two doors that lead to the exit of the castle.");
-Console.WriteLine("One door has a [gold pouch] crest on it and the other one has a [gold bar] crest on it.");
+Console.WriteLine("One door has a [gold pouch] crest on it and the other one has a [gold bar] crest on it. Could this lead to more gold?!");
 Console.WriteLine("Which door do you dare to open?");
 
 //Step 8: Check player's response, axe or sword
@@ -97,7 +99,7 @@ string input5 = Console.ReadLine();
 
 if (input5 == "gold pouch")
 {
-    Console.WriteLine("You open the door and are free to exit the castle! Well done!");
+    Console.WriteLine($"You open the door and are free to exit the castle! Well done, {name}!");
 }
 
 //Step 3b: Player chooses gold bar
@@ -106,6 +108,9 @@ else if (input5 == "gold bar")
 {
     Console.WriteLine("You go to open the door with the gold bar and a GOBLIN appears!");
     Console.WriteLine("The goblin won't let you pass unless you give them half your gold!");
+    myGold -= 2500;
+    Console.WriteLine($"You now have {myGold} gold!");
+    Console.WriteLine($"The goblin allows you to leave the castle. Well done, {name}!");
 }
 
 bool foundTheTreasure = false;
